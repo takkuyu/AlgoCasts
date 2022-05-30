@@ -34,7 +34,8 @@ function steps1(n, row = 0, stair = '') {
 
   if (n === stair.length) {
     console.log(stair);
-    return steps(n, row + 1);
+    steps(n, row + 1);
+    return;
   }
 
   const add = stair.length <= row ? '#' : ' ';
